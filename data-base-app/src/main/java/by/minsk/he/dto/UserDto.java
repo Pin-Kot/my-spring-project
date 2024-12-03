@@ -24,5 +24,5 @@ public class UserDto {
     private String nickname;
     private String mobilePhone;
     private BigDecimal balance;
-    private List<AdvertisementDto> favorites;
+    private List<UUID> favoritesAdvertisementId;
 }

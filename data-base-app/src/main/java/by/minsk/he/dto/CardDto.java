@@ -8,6 +8,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.math.BigDecimal;
+import java.util.UUID;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -16,7 +17,7 @@ import java.math.BigDecimal;
 @ToString
 @Builder
 public class CardDto {
-    private Long cardId;
+    private UUID cardId;
     private String holderName;
     private String number;
     private BigDecimal amount;

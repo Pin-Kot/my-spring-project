@@ -13,6 +13,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.math.BigDecimal;
+import java.util.UUID;
 
 @Entity
 @Table(name = "card")
@@ -25,7 +26,7 @@ import java.math.BigDecimal;
 public class CardModel {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long cardId;
+    private UUID cardId;
     private String holderName;
     private String number;
     private BigDecimal amount;

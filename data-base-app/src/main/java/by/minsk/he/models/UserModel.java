@@ -7,15 +7,14 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-import javax.persistence.CascadeType;
+import javax.persistence.CollectionTable;
 import javax.persistence.Column;
+import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -36,16 +35,14 @@ public class UserModel {
     private UUID userId;
     @Column(unique = true, nullable = false)
     private String login;
+    @Column(nullable = false)
     private String password;
     private String nickname;
     private String mobilePhone;
     private BigDecimal balance;
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(
-            name = "user_favorites",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "advertisement_id")
-    )
+    @ElementCollection
+    @CollectionTable(name = "user_favorites", joinColumns = @JoinColumn(name = "user_id"))
+    @Column(name = "advertisement_id")
     @Builder.Default
-    private List<AdvertisementModel> favorites = new ArrayList<>();
+    private List<UUID> favoritesAdvertisementId = new ArrayList<>();
 }
