@@ -1,0 +1,525 @@
+{
+	"info": {
+		"_postman_id": "7c607409-dac0-49de-bd45-2fad4643a790",
+		"name": "my-spring-project-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37664173"
+	},
+	"item": [
+		{
+			"name": "data-base-app",
+			"item": [
+				{
+					"name": "car",
+					"item": [
+						{
+							"name": "Create Car",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{  \r\n  \"brand\": \"Toyota\",\r\n  \"model\": \"Camry\",\r\n  \"year\": 2021,\r\n  \"mileage\": 15000,\r\n  \"engineType\": \"GASOLINE\",\r\n  \"engineCapacity\": 2500,\r\n  \"transmissionType\": \"AUTO\",\r\n  \"bodyType\": \"SEDAN\",\r\n  \"customStatus\": \"CLEARED\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8101/database/car/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"car",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Find Car",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8101/database/car/find/0a842c23-1579-4e7b-9b30-6118ce73bbb1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"car",
+										"find",
+										"0a842c23-1579-4e7b-9b30-6118ce73bbb1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Find All Cars",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8101/database/car/find/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"car",
+										"find",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Car",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"carId\": \"4cf4a4fb-4341-4ebb-8c0f-78bf73e67864\",\r\n        \"brand\": \"Volkswagen\",\r\n        \"model\": \"Polo\",\r\n        \"year\": 2018,\r\n        \"mileage\": 25000,\r\n        \"engineType\": \"GASOLINE\",\r\n        \"engineCapacity\": 1500,\r\n        \"transmissionType\": \"MANUAL\",\r\n        \"bodyType\": \"HATCHBACK,\",\r\n        \"customStatus\": \"CLEARED\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8101/database/car/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"car",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Car",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8101/database/car/delete/50791a30-ad8f-4bce-92cd-016058d7b834",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"car",
+										"delete",
+										"50791a30-ad8f-4bce-92cd-016058d7b834"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "Create User",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userId\": \"123e4567-e89b-12d3-a456-426614174000\",\r\n    \"login\": \"exampleUser\",\r\n    \"password\": \"newStrongPassword123\",\r\n    \"nickname\": \"exampleNick\",\r\n    \"mobilePhone\": \"+1234567890\",\r\n    \"balance\": 100.50,\r\n    \"favorites\": []\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8101/database/user/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"user",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Find User",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8101/database/user/find/a70018fd-c3e8-4063-b623-1879d6a4eee5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"user",
+										"find",
+										"a70018fd-c3e8-4063-b623-1879d6a4eee5"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Find All Users",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8101/database/user/find/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"user",
+										"find",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update User",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userId\": \"a70018fd-c3e8-4063-b623-1879d6a4eee5\",\r\n    \"login\": \"exampleUser\",\r\n    \"password\": \"passwordNew\",\r\n    \"nickname\": \"JustNick\",\r\n    \"mobilePhone\": \"+1234567890\",\r\n    \"balance\": 100.50,\r\n    \"favorites\": []\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8101/database/user/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"user",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete User",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8101/database/user/delete/a70018fd-c3e8-4063-b623-1879d6a4eee5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"user",
+										"delete",
+										"a70018fd-c3e8-4063-b623-1879d6a4eee5"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "advert",
+					"item": [
+						{
+							"name": "Create Advert",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{    \r\n    \"startDate\": \"2023-10-01\",\r\n    \"contactPhone\": \"+1234567890\",\r\n    \"price\": 1500.75,\r\n    \"rank\": 5,\r\n    \"regionType\": \"MINSK_REGION\",\r\n    \"advertStatus\": \"PREMIUM\",\r\n    \"carDto\": {\r\n        \"carId\": \"e9df9427-bf5b-4374-bca6-b253f28a36f5\",\r\n        \"brand\": \"Toyota\",\r\n        \"model\": \"Camry\",\r\n        \"year\": 2021,\r\n        \"mileage\": 15000,\r\n        \"engineType\": \"GASOLINE\",\r\n        \"engineCapacity\": 2500,\r\n        \"transmissionType\": \"AUTO\",\r\n        \"bodyType\": \"SEDAN\",\r\n        \"customStatus\": \"CLEARED\"\r\n    },\r\n    \"userDto\": {\r\n        \"userId\": \"0bb65292-b927-4563-8ae7-886c8646e792\",\r\n        \"login\": \"Alice\",\r\n        \"password\": \"Cooper\",\r\n        \"nickname\": \"WounderAlice\",\r\n        \"mobilePhone\": \"+7234567890\",\r\n        \"balance\": 99.99,\r\n        \"favorites\": []\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8101/database/advertisement/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"advertisement",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Find Advert",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8101/database/advertisement/find/e31f3031-5562-4027-bd9b-a65edb088e16",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"advertisement",
+										"find",
+										"e31f3031-5562-4027-bd9b-a65edb088e16"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Find All Adverts",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8101/database/advertisement/find/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"advertisement",
+										"find",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Advert",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"advertisementId\": \"e31f3031-5562-4027-bd9b-a65edb088e16\",\r\n    \"startDate\": \"2023-10-01\",\r\n    \"contactPhone\": \"+1234567890\",\r\n    \"price\": 1500.75,\r\n    \"rank\": 5,\r\n    \"regionType\": \"MINSK_REGION\",\r\n    \"advertStatus\": \"STANDARD\",\r\n    \"carDto\": {\r\n        \"carId\": \"e9df9427-bf5b-4374-bca6-b253f28a36f5\",\r\n        \"brand\": \"Toyota\",\r\n        \"model\": \"Camry\",\r\n        \"year\": 2021,\r\n        \"mileage\": 15000,\r\n        \"engineType\": \"GASOLINE\",\r\n        \"engineCapacity\": 2500,\r\n        \"transmissionType\": \"AUTO\",\r\n        \"bodyType\": \"SEDAN\",\r\n        \"customStatus\": \"CLEARED\"\r\n    },\r\n    \"userDto\": {\r\n        \"userId\": \"0bb65292-b927-4563-8ae7-886c8646e792\",\r\n        \"login\": \"Alice\",\r\n        \"password\": \"Cooper\",\r\n        \"nickname\": \"WounderAlice\",\r\n        \"mobilePhone\": \"+7234567890\",\r\n        \"balance\": 99.99,\r\n        \"favorites\": []\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8101/database/advertisement/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"advertisement",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Advert",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8101/database/advertisement/delete/e31f3031-5562-4027-bd9b-a65edb088e16",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"advertisement",
+										"delete",
+										"e31f3031-5562-4027-bd9b-a65edb088e16"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "comment",
+					"item": [
+						{
+							"name": "Create Comment",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{        \r\n    \"content\": \"This is a sample comment.\",\r\n    \"userDto\": {\r\n        \"userId\": \"98101bda-50d5-481c-8c2a-a846217fb1ba\",\r\n        \"login\": \"Alice\",\r\n        \"password\": \"Cooper\",\r\n        \"nickname\": \"WounderAlice\",\r\n        \"mobilePhone\": \"+7234567890\",\r\n        \"balance\": 99.99,\r\n        \"favorites\": []\r\n    },\r\n    \"advertisementDto\": {\r\n    \"advertisementId\": \"ed530d4a-4353-4495-87d0-5aec26d8df0f\",\r\n    \"startDate\": \"2023-10-01\",\r\n    \"contactPhone\": \"+1234567890\",\r\n    \"price\": 1500.75,\r\n    \"rank\": 5,\r\n    \"regionType\": \"MINSK_REGION\",\r\n    \"advertStatus\": \"PREMIUM\",\r\n    \"carDto\": {\r\n        \"carId\": \"0abe7877-b33f-4300-8b19-f2519d3e08b5\",\r\n        \"brand\": \"Toyota\",\r\n        \"model\": \"Camry\",\r\n        \"year\": 2021,\r\n        \"mileage\": 15000,\r\n        \"engineType\": \"GASOLINE\",\r\n        \"engineCapacity\": 2500,\r\n        \"transmissionType\": \"AUTO\",\r\n        \"bodyType\": \"SEDAN\",\r\n        \"customStatus\": \"CLEARED\"\r\n    },\r\n    \"userDto\": {\r\n        \"userId\": \"98101bda-50d5-481c-8c2a-a846217fb1ba\",\r\n        \"login\": \"Alice\",\r\n        \"password\": \"Cooper\",\r\n        \"nickname\": \"WounderAlice\",\r\n        \"mobilePhone\": \"+7234567890\",\r\n        \"balance\": 99.99,\r\n        \"favorites\": []\r\n    }\r\n}\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8101/database/comment/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"comment",
+										"create"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Find Comment",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8101/database/comment/find/72fb88e2-490d-4bdb-9836-c9975f687cc0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"comment",
+										"find",
+										"72fb88e2-490d-4bdb-9836-c9975f687cc0"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Find All Comments",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8101/database/comment/find/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"comment",
+										"find",
+										"all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Comment",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"commentId\": \"72fb88e2-490d-4bdb-9836-c9975f687cc0\",\r\n    \"created\": null,\r\n    \"content\": \"Absolutely new comment.\",\r\n    \"userDto\": {\r\n        \"userId\": \"98101bda-50d5-481c-8c2a-a846217fb1ba\",\r\n        \"login\": \"Alice\",\r\n        \"password\": \"Cooper\",\r\n        \"nickname\": \"WounderAlice\",\r\n        \"mobilePhone\": \"+7234567890\",\r\n        \"balance\": 99.99,\r\n        \"favorites\": []\r\n    },\r\n    \"advertisementDto\": {\r\n        \"advertisementId\": \"ed530d4a-4353-4495-87d0-5aec26d8df0f\",\r\n        \"startDate\": \"2023-10-01\",\r\n        \"contactPhone\": \"+1234567890\",\r\n        \"price\": 1500.75,\r\n        \"rank\": 5,\r\n        \"regionType\": \"MINSK_REGION\",\r\n        \"advertStatus\": \"PREMIUM\",\r\n        \"carDto\": {\r\n            \"carId\": \"0abe7877-b33f-4300-8b19-f2519d3e08b5\",\r\n            \"brand\": \"Toyota\",\r\n            \"model\": \"Camry\",\r\n            \"year\": 2021,\r\n            \"mileage\": 15000,\r\n            \"engineType\": \"GASOLINE\",\r\n            \"engineCapacity\": 2500,\r\n            \"transmissionType\": \"AUTO\",\r\n            \"bodyType\": \"SEDAN\",\r\n            \"customStatus\": \"CLEARED\"\r\n        },\r\n        \"userDto\": {\r\n            \"userId\": \"98101bda-50d5-481c-8c2a-a846217fb1ba\",\r\n            \"login\": \"Alice\",\r\n            \"password\": \"Cooper\",\r\n            \"nickname\": \"WounderAlice\",\r\n            \"mobilePhone\": \"+7234567890\",\r\n            \"balance\": 99.99,\r\n            \"favorites\": []\r\n        }\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8101/database/comment/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"comment",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Comment",
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

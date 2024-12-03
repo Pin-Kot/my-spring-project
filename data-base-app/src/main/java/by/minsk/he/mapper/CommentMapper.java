@@ -8,10 +8,10 @@ import org.mapstruct.Mapping;
 
 @Mapper(config = MapstructConfiguration.class, uses = {UserMapper.class, AdvertisementMapper.class})
 public interface CommentMapper {
-    @Mapping(source = "userModel", target = "userDto")
+//    @Mapping(source = "userId", target = "userId")
     @Mapping(source = "advertisementModel", target = "advertisementDto")
     CommentDto toCommentDto(CommentModel car);
-    @Mapping(source = "userDto", target = "userModel")
+//    @Mapping(source = "userId", target = "userId")
     @Mapping(source = "advertisementDto", target = "advertisementModel")
     CommentModel toCommentModel(CommentDto carDto);
 }

@@ -14,7 +14,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
 import java.util.UUID;
 
 @Entity
@@ -29,12 +29,10 @@ public class CommentModel {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID commentId;
-    private LocalDateTime created;
+    private ZonedDateTime created;
     private String content;
+    private UUID userId;
     @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
-    private UserModel userModel;
-    @ManyToOne//(cascade = CascadeType.MERGE)
     @JoinColumn(name = "advertisement_id")
     private AdvertisementModel advertisementModel;
 }

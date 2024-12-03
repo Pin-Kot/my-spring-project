@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
 import java.util.UUID;
 
 @AllArgsConstructor
@@ -16,8 +16,8 @@ import java.util.UUID;
 @Builder
 public class CommentDto {
     private UUID commentId;
-    private LocalDateTime created;
+    private ZonedDateTime created;
     private String content;
-    private UserDto userDto;
+    private UUID userId;
     private AdvertisementDto advertisementDto;
 }
