@@ -1,7 +1,7 @@
 package by.minsk.he.mapper;
 
 import by.minsk.he.config.MapstructConfiguration;
-import by.minsk.he.dto.AdvertisementDto;
+import by.minsk.he.dto.to_data_base_dto.AdvertisementDto;
 import by.minsk.he.models.AdvertisementModel;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
