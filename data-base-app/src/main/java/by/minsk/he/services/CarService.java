@@ -37,7 +37,6 @@ public class CarService {
         return carRepository.save(car);
     }
 
-    @Transactional
     public CarModel deleteCar(UUID id) {
         CarModel carFromBase = findCarById(id);
         carRepository.delete(carFromBase);
