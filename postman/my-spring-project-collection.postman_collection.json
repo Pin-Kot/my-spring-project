@@ -1,8 +1,8 @@
 {
 	"info": {
-		"_postman_id": "7c607409-dac0-49de-bd45-2fad4643a790",
+		"_postman_id": "3e336796-beef-467c-81d0-cb627c481dff",
 		"name": "my-spring-project-collection",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
 		"_exporter_id": "37664173"
 	},
 	"item": [
@@ -19,26 +19,14 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{  \r\n  \"brand\": \"Toyota\",\r\n  \"model\": \"Camry\",\r\n  \"year\": 2021,\r\n  \"mileage\": 15000,\r\n  \"engineType\": \"GASOLINE\",\r\n  \"engineCapacity\": 2500,\r\n  \"transmissionType\": \"AUTO\",\r\n  \"bodyType\": \"SEDAN\",\r\n  \"customStatus\": \"CLEARED\"\r\n}",
+									"raw": "{  \r\n  \"brand\": \"Mercedes-Benz\",\r\n  \"model\": \"E220\",\r\n  \"year\": 2015,\r\n  \"mileage\": 15000,\r\n  \"engineType\": \"DIESEL\",\r\n  \"engineCapacity\": 2100,\r\n  \"transmissionType\": \"AUTO\",\r\n  \"bodyType\": \"SEDAN\",\r\n  \"customStatus\": \"CLEARED\"\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
 										}
 									}
 								},
-								"url": {
-									"raw": "http://localhost:8101/database/car/create",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8101",
-									"path": [
-										"database",
-										"car",
-										"create"
-									]
-								}
+								"url": "http://localhost:8101/database/car/create"
 							},
 							"response": []
 						},
@@ -47,20 +35,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "http://localhost:8101/database/car/find/0a842c23-1579-4e7b-9b30-6118ce73bbb1",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8101",
-									"path": [
-										"database",
-										"car",
-										"find",
-										"0a842c23-1579-4e7b-9b30-6118ce73bbb1"
-									]
-								}
+								"url": "http://localhost:8101/database/car/find/0a842c23-1579-4e7b-9b30-6118ce73bbb1"
 							},
 							"response": []
 						},
@@ -69,20 +44,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "http://localhost:8101/database/car/find/all",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8101",
-									"path": [
-										"database",
-										"car",
-										"find",
-										"all"
-									]
-								}
+								"url": "http://localhost:8101/database/car/find/all"
 							},
 							"response": []
 						},
@@ -100,19 +62,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "http://localhost:8101/database/car/update",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8101",
-									"path": [
-										"database",
-										"car",
-										"update"
-									]
-								}
+								"url": "http://localhost:8101/database/car/update"
 							},
 							"response": []
 						},
@@ -121,20 +71,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": {
-									"raw": "http://localhost:8101/database/car/delete/50791a30-ad8f-4bce-92cd-016058d7b834",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8101",
-									"path": [
-										"database",
-										"car",
-										"delete",
-										"50791a30-ad8f-4bce-92cd-016058d7b834"
-									]
-								}
+								"url": "http://localhost:8101/database/car/delete/97f10a27-6ee2-4bc8-8754-1f087745404f"
 							},
 							"response": []
 						}
@@ -157,19 +94,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "http://localhost:8101/database/user/create",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8101",
-									"path": [
-										"database",
-										"user",
-										"create"
-									]
-								}
+								"url": "http://localhost:8101/database/user/create"
 							},
 							"response": []
 						},
@@ -178,20 +103,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "http://localhost:8101/database/user/find/a70018fd-c3e8-4063-b623-1879d6a4eee5",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8101",
-									"path": [
-										"database",
-										"user",
-										"find",
-										"a70018fd-c3e8-4063-b623-1879d6a4eee5"
-									]
-								}
+								"url": "http://localhost:8101/database/user/find/a70018fd-c3e8-4063-b623-1879d6a4eee5"
 							},
 							"response": []
 						},
@@ -200,20 +112,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "http://localhost:8101/database/user/find/all",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8101",
-									"path": [
-										"database",
-										"user",
-										"find",
-										"all"
-									]
-								}
+								"url": "http://localhost:8101/database/user/find/all"
 							},
 							"response": []
 						},
@@ -231,19 +130,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "http://localhost:8101/database/user/update",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8101",
-									"path": [
-										"database",
-										"user",
-										"update"
-									]
-								}
+								"url": "http://localhost:8101/database/user/update"
 							},
 							"response": []
 						},
@@ -252,20 +139,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": {
-									"raw": "http://localhost:8101/database/user/delete/a70018fd-c3e8-4063-b623-1879d6a4eee5",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8101",
-									"path": [
-										"database",
-										"user",
-										"delete",
-										"a70018fd-c3e8-4063-b623-1879d6a4eee5"
-									]
-								}
+								"url": "http://localhost:8101/database/user/delete/a70018fd-c3e8-4063-b623-1879d6a4eee5"
 							},
 							"response": []
 						}
@@ -288,19 +162,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "http://localhost:8101/database/advertisement/create",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8101",
-									"path": [
-										"database",
-										"advertisement",
-										"create"
-									]
-								}
+								"url": "http://localhost:8101/database/advertisement/create"
 							},
 							"response": []
 						},
@@ -309,20 +171,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "http://localhost:8101/database/advertisement/find/e31f3031-5562-4027-bd9b-a65edb088e16",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8101",
-									"path": [
-										"database",
-										"advertisement",
-										"find",
-										"e31f3031-5562-4027-bd9b-a65edb088e16"
-									]
-								}
+								"url": "http://localhost:8101/database/advertisement/find/73624a82-5a15-42e5-b7bb-f84e2d2761fc"
 							},
 							"response": []
 						},
@@ -331,20 +180,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "http://localhost:8101/database/advertisement/find/all",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8101",
-									"path": [
-										"database",
-										"advertisement",
-										"find",
-										"all"
-									]
-								}
+								"url": "http://localhost:8101/database/advertisement/find/all"
 							},
 							"response": []
 						},
@@ -362,19 +198,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "http://localhost:8101/database/advertisement/update",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8101",
-									"path": [
-										"database",
-										"advertisement",
-										"update"
-									]
-								}
+								"url": "http://localhost:8101/database/advertisement/update"
 							},
 							"response": []
 						},
@@ -383,20 +207,7 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": {
-									"raw": "http://localhost:8101/database/advertisement/delete/e31f3031-5562-4027-bd9b-a65edb088e16",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8101",
-									"path": [
-										"database",
-										"advertisement",
-										"delete",
-										"e31f3031-5562-4027-bd9b-a65edb088e16"
-									]
-								}
+								"url": "http://localhost:8101/database/advertisement/delete/e31f3031-5562-4027-bd9b-a65edb088e16"
 							},
 							"response": []
 						}
@@ -419,19 +230,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "http://localhost:8101/database/comment/create",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8101",
-									"path": [
-										"database",
-										"comment",
-										"create"
-									]
-								}
+								"url": "http://localhost:8101/database/comment/create"
 							},
 							"response": []
 						},
@@ -440,20 +239,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "http://localhost:8101/database/comment/find/72fb88e2-490d-4bdb-9836-c9975f687cc0",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8101",
-									"path": [
-										"database",
-										"comment",
-										"find",
-										"72fb88e2-490d-4bdb-9836-c9975f687cc0"
-									]
-								}
+								"url": "http://localhost:8101/database/comment/find/72fb88e2-490d-4bdb-9836-c9975f687cc0"
 							},
 							"response": []
 						},
@@ -462,20 +248,7 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": {
-									"raw": "http://localhost:8101/database/comment/find/all",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8101",
-									"path": [
-										"database",
-										"comment",
-										"find",
-										"all"
-									]
-								}
+								"url": "http://localhost:8101/database/comment/find/all"
 							},
 							"response": []
 						},
@@ -493,19 +266,7 @@
 										}
 									}
 								},
-								"url": {
-									"raw": "http://localhost:8101/database/comment/update",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8101",
-									"path": [
-										"database",
-										"comment",
-										"update"
-									]
-								}
+								"url": "http://localhost:8101/database/comment/update"
 							},
 							"response": []
 						},
@@ -513,7 +274,258 @@
 							"name": "Delete Comment",
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [],
+								"url": ""
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "service-app",
+			"item": [
+				{
+					"name": "advert",
+					"item": [
+						{
+							"name": "Create Advert",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{    \r\n    \"startDate\": \"2023-10-01\",\r\n    \"contactPhone\": \"+375297878787\",\r\n    \"price\": 19900.00,\r\n    \"rank\": 0,\r\n    \"regionType\": \"MINSK_REGION\",\r\n    \"advertStatus\": \"PREMIUM\",\r\n    \"carWebDto\": {\r\n        \"carId\": \"97f10a27-6ee2-4bc8-8754-1f087745404f\",\r\n        \"brand\": \"Mercedes-Benz\",\r\n        \"model\": \"E220\",\r\n        \"year\": 2015,\r\n        \"mileage\": 15000,\r\n        \"engineType\": \"DIESEL\",\r\n        \"engineCapacity\": 2100,\r\n        \"transmissionType\": \"AUTO\",\r\n        \"bodyType\": \"SEDAN\",\r\n        \"customStatus\": \"CLEARED\"\r\n    },\r\n    \"userWebDto\": {\r\n            \"userId\": \"4010ec37-1fa9-4ea0-a092-08a3254548f7\",\r\n            \"login\": \"bwilson\",\r\n            \"password\": \"password3\",\r\n            \"nickname\": \"Bob\",\r\n            \"mobilePhone\": \"+375447777777\",\r\n            \"balance\": 100.00,\r\n            \"favoritesAdvertisementId\": [\r\n                \"db36596a-e63b-4620-8cf1-c9db34791314\",\r\n                \"02a966c7-4d74-4e9f-86c9-83acb588f980\",\r\n                \"49f2b6b3-cfd3-49e5-8edf-2879ebebffd7\"\r\n            ]\r\n        }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8111/business/advertisement/create"
+							},
+							"response": []
+						},
+						{
+							"name": "Find Advert",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8111/business/advertisement/find/e4ee18c8-e407-418a-9bda-f90e5f396108"
+							},
+							"response": []
+						},
+						{
+							"name": "Find All",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8111/business/advertisement/find/all"
+							},
+							"response": []
+						},
+						{
+							"name": "Update Advert",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"advertisementId\": \"364fa6da-8f6b-4052-8411-6b7f2e21bab3\",\r\n    \"startDate\": \"2023-10-01\",\r\n    \"contactPhone\": \"+375297878787\",\r\n    \"price\": 21111.00,\r\n    \"rank\": 1,\r\n    \"regionType\": \"MINSK_REGION\",\r\n    \"advertStatus\": \"PREMIUM\",\r\n    \"carWebDto\": {\r\n        \"carId\": \"97f10a27-6ee2-4bc8-8754-1f087745404f\",\r\n        \"brand\": \"Mercedes-Benz\",\r\n        \"model\": \"E220\",\r\n        \"year\": 2015,\r\n        \"mileage\": 350000,\r\n        \"engineType\": \"DIESEL\",\r\n        \"engineCapacity\": 2100,\r\n        \"transmissionType\": \"AUTO\",\r\n        \"bodyType\": \"SEDAN\",\r\n        \"customStatus\": \"CLEARED\"\r\n    },\r\n    \"userWebDto\": {\r\n        \"userId\": \"4010ec37-1fa9-4ea0-a092-08a3254548f7\",\r\n        \"login\": \"bwilson\",\r\n        \"password\": \"password3\",\r\n        \"nickname\": \"Bob\",\r\n        \"mobilePhone\": \"+375447777777\",\r\n        \"balance\": 100.00,\r\n        \"favoritesAdvertisementId\": [\r\n            \"db36596a-e63b-4620-8cf1-c9db34791314\",\r\n            \"02a966c7-4d74-4e9f-86c9-83acb588f980\",\r\n            \"49f2b6b3-cfd3-49e5-8edf-2879ebebffd7\"\r\n        ]\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8111/business/advertisement/update"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Advert",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:8111/business/advertisement/delete/364fa6da-8f6b-4052-8411-6b7f2e21bab3"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "car",
+					"item": [
+						{
+							"name": "Create Car",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{  \r\n  \"brand\": \"Mercedes-Benz\",\r\n  \"model\": \"E220\",\r\n  \"year\": 2015,\r\n  \"mileage\": 15000,\r\n  \"engineType\": \"DIESEL\",\r\n  \"engineCapacity\": 2100,\r\n  \"transmissionType\": \"AUTO\",\r\n  \"bodyType\": \"SEDAN\",\r\n  \"customStatus\": \"CLEARED\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8111/business/car/create"
+							},
+							"response": []
+						},
+						{
+							"name": "Find Car",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8111/business/car/find/62298098-dc52-4de0-b33c-8a139985aac0"
+							},
+							"response": []
+						},
+						{
+							"name": "Update Car",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"carId\": \"d0655283-dc1d-4002-be8d-ba529348aa3c\",\r\n    \"brand\": \"Mercedes-Benz\",\r\n    \"model\": \"E220\",\r\n    \"year\": 2015,\r\n    \"mileage\": 290000,\r\n    \"engineType\": \"DIESEL\",\r\n    \"engineCapacity\": 2100,\r\n    \"transmissionType\": \"AUTO\",\r\n    \"bodyType\": \"SEDAN\",\r\n    \"customStatus\": \"CLEARED\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8111/business/car/update"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Car",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:8111/business/car/delete/62298098-dc52-4de0-b33c-8a139985aac0"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "Create User",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{    \r\n    \"login\": \"exampleUser\",\r\n    \"password\": \"newStrongPassword123\",\r\n    \"nickname\": \"exampleNick\",\r\n    \"mobilePhone\": \"+1234567890\",\r\n    \"balance\": 100.50,\r\n    \"favorites\": []\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8111/business/user/create"
+							},
+							"response": []
+						},
+						{
+							"name": "Find User",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8111/business/user/find/e6a72750-b3b5-41ac-9c3f-2bd753419bba"
+							},
+							"response": []
+						},
+						{
+							"name": "Update User",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userId\": \"4e88e586-eb2d-4c76-b615-63fc0ed76459\",\r\n    \"login\": \"normLogin\",\r\n    \"password\": \"difficultPassword\",\r\n    \"nickname\": \"exampleNick\",\r\n    \"mobilePhone\": \"+1234567890\",\r\n    \"balance\": 1100.00,\r\n    \"favoritesAdvertisementId\": []\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8111/business/user/update"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete User",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:8111/business/user/delete/76d75130-a159-4020-89f2-143c5aea0266"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "comment",
+					"item": [
+						{
+							"name": "Create Comment",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{    \r\n    \"content\": \"Fantastic!\",\r\n    \"userId\": \"4010ec37-1fa9-4ea0-a092-08a3254548f7\",\r\n    \"advertisementWebDto\": {\r\n        \"advertisementId\": \"081c8681-e042-4990-a38a-e564a4d25596\",\r\n        \"startDate\": \"2024-12-11\",\r\n        \"contactPhone\": \"+375291111111\",\r\n        \"price\": 35000.00,\r\n        \"rank\": 0,\r\n        \"regionType\": \"GOMEL_REGION\",\r\n        \"advertStatus\": \"STANDARD\",\r\n        \"carWebDto\": {\r\n            \"carId\": \"12273ce5-c9ab-43c8-bcd1-ae12f7077978\",\r\n            \"brand\": \"Volkswagen\",\r\n            \"model\": \"Passat\",\r\n            \"year\": 2015,\r\n            \"mileage\": 250000,\r\n            \"engineType\": \"DIESEL\",\r\n            \"engineCapacity\": 1800,\r\n            \"transmissionType\": \"MANUAL\",\r\n            \"bodyType\": \"UNIVERSAL\",\r\n            \"customStatus\": \"CLEARED\"\r\n        },\r\n        \"userWebDto\": {\r\n            \"userId\": \"e6a72750-b3b5-41ac-9c3f-2bd753419bba\",\r\n            \"login\": \"asmith\",\r\n            \"password\": \"password2\",\r\n            \"nickname\": \"Alice\",\r\n            \"mobilePhone\": \"+375251010101\",\r\n            \"balance\": 100.00,\r\n            \"favoritesAdvertisementId\": []\r\n        }\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8111/business/comment/create"
+							},
+							"response": []
+						},
+						{
+							"name": "Find Comment",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8111/business/comment/find/508c00b4-6e7f-4008-9c09-7da3a8428f69"
+							},
+							"response": []
+						},
+						{
+							"name": "Update Comment",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"commentId\": \"508c00b4-6e7f-4008-9c09-7da3a8428f69\",\r\n    \"created\": \"2024-12-11T17:44:07.801981Z\",\r\n    \"content\": \"COOOOL!!!\",\r\n    \"userId\": \"e6a72750-b3b5-41ac-9c3f-2bd753419bba\",\r\n    \"advertisementWebDto\": {\r\n        \"advertisementId\": \"a6c543db-1436-4977-aea8-fc113be966f6\",\r\n        \"startDate\": \"2024-12-11\",\r\n        \"contactPhone\": \"+375447777777\",\r\n        \"price\": 25000.00,\r\n        \"rank\": 0,\r\n        \"regionType\": \"BREST_REGION\",\r\n        \"advertStatus\": \"STANDARD\",\r\n        \"carWebDto\": {\r\n            \"carId\": \"62298098-dc52-4de0-b33c-8a139985aac0\",\r\n            \"brand\": \"Toyota\",\r\n            \"model\": \"Camry\",\r\n            \"year\": 2020,\r\n            \"mileage\": 15000,\r\n            \"engineType\": \"GASOLINE\",\r\n            \"engineCapacity\": 2500,\r\n            \"transmissionType\": \"MANUAL\",\r\n            \"bodyType\": \"SEDAN\",\r\n            \"customStatus\": \"CLEARED\"\r\n        },\r\n        \"userWebDto\": {\r\n            \"userId\": \"25d43175-c5ea-41be-8e26-e780167416b0\",\r\n            \"login\": \"cjohnson\",\r\n            \"password\": \"password4\",\r\n            \"nickname\": \"Cathy\",\r\n            \"mobilePhone\": \"+375297878787\",\r\n            \"balance\": 100.00,\r\n            \"favoritesAdvertisementId\": []\r\n        }\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8111/business/comment/update"
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Comment",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:8111/business/comment/delete/508c00b4-6e7f-4008-9c09-7da3a8428f69"
 							},
 							"response": []
 						}

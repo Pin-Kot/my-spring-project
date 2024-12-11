@@ -39,7 +39,6 @@ public class CommentService {
         return commentRepository.save(comment);
     }
 
-    @Transactional
     public CommentModel deleteComment(UUID id){
         CommentModel comment = findCommentById(id);
         commentRepository.delete(comment);

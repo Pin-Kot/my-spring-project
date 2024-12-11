@@ -38,7 +38,6 @@ public class AdvertisementService {
         return advertisementRepository.save(advertisement);
     }
 
-    @Transactional
     public AdvertisementModel deleteAdvertisement(UUID id){
         AdvertisementModel advertisement = findAdvertisementById(id);
         advertisementRepository.delete(advertisement);

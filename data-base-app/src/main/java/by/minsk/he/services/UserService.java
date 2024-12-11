@@ -3,6 +3,7 @@ package by.minsk.he.services;
 import by.minsk.he.models.UserModel;
 import by.minsk.he.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.hibernate.Hibernate;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -41,9 +42,9 @@ public class UserService {
         return userRepository.save(user);
     }
 
-    @Transactional
     public UserModel deleteUser(UUID id) throws NoSuchElementException {
         UserModel user = findUserById(id);
+        Hibernate.initialize(user.getFavoritesAdvertisementId());
         userRepository.delete(user);
         return user;
     }
