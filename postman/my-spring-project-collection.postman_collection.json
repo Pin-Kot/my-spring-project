@@ -1,8 +1,8 @@
 {
 	"info": {
-		"_postman_id": "3e336796-beef-467c-81d0-cb627c481dff",
+		"_postman_id": "d41a9552-6ae7-48b8-9df2-604a9995e305",
 		"name": "my-spring-project-collection",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "37664173"
 	},
 	"item": [
@@ -26,7 +26,19 @@
 										}
 									}
 								},
-								"url": "http://localhost:8101/database/car/create"
+								"url": {
+									"raw": "http://localhost:8101/database/car/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"car",
+										"create"
+									]
+								}
 							},
 							"response": []
 						},
@@ -35,7 +47,20 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "http://localhost:8101/database/car/find/0a842c23-1579-4e7b-9b30-6118ce73bbb1"
+								"url": {
+									"raw": "http://localhost:8101/database/car/find/0a842c23-1579-4e7b-9b30-6118ce73bbb1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"car",
+										"find",
+										"0a842c23-1579-4e7b-9b30-6118ce73bbb1"
+									]
+								}
 							},
 							"response": []
 						},
@@ -44,7 +69,20 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "http://localhost:8101/database/car/find/all"
+								"url": {
+									"raw": "http://localhost:8101/database/car/find/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"car",
+										"find",
+										"all"
+									]
+								}
 							},
 							"response": []
 						},
@@ -62,7 +100,19 @@
 										}
 									}
 								},
-								"url": "http://localhost:8101/database/car/update"
+								"url": {
+									"raw": "http://localhost:8101/database/car/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"car",
+										"update"
+									]
+								}
 							},
 							"response": []
 						},
@@ -71,7 +121,20 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "http://localhost:8101/database/car/delete/97f10a27-6ee2-4bc8-8754-1f087745404f"
+								"url": {
+									"raw": "http://localhost:8101/database/car/delete/97f10a27-6ee2-4bc8-8754-1f087745404f",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"car",
+										"delete",
+										"97f10a27-6ee2-4bc8-8754-1f087745404f"
+									]
+								}
 							},
 							"response": []
 						}
@@ -94,7 +157,19 @@
 										}
 									}
 								},
-								"url": "http://localhost:8101/database/user/create"
+								"url": {
+									"raw": "http://localhost:8101/database/user/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"user",
+										"create"
+									]
+								}
 							},
 							"response": []
 						},
@@ -103,7 +178,20 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "http://localhost:8101/database/user/find/a70018fd-c3e8-4063-b623-1879d6a4eee5"
+								"url": {
+									"raw": "http://localhost:8101/database/user/find/a70018fd-c3e8-4063-b623-1879d6a4eee5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"user",
+										"find",
+										"a70018fd-c3e8-4063-b623-1879d6a4eee5"
+									]
+								}
 							},
 							"response": []
 						},
@@ -112,7 +200,20 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "http://localhost:8101/database/user/find/all"
+								"url": {
+									"raw": "http://localhost:8101/database/user/find/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"user",
+										"find",
+										"all"
+									]
+								}
 							},
 							"response": []
 						},
@@ -130,7 +231,19 @@
 										}
 									}
 								},
-								"url": "http://localhost:8101/database/user/update"
+								"url": {
+									"raw": "http://localhost:8101/database/user/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"user",
+										"update"
+									]
+								}
 							},
 							"response": []
 						},
@@ -139,7 +252,20 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "http://localhost:8101/database/user/delete/a70018fd-c3e8-4063-b623-1879d6a4eee5"
+								"url": {
+									"raw": "http://localhost:8101/database/user/delete/a70018fd-c3e8-4063-b623-1879d6a4eee5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"user",
+										"delete",
+										"a70018fd-c3e8-4063-b623-1879d6a4eee5"
+									]
+								}
 							},
 							"response": []
 						}
@@ -162,7 +288,19 @@
 										}
 									}
 								},
-								"url": "http://localhost:8101/database/advertisement/create"
+								"url": {
+									"raw": "http://localhost:8101/database/advertisement/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"advertisement",
+										"create"
+									]
+								}
 							},
 							"response": []
 						},
@@ -171,7 +309,299 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "http://localhost:8101/database/advertisement/find/73624a82-5a15-42e5-b7bb-f84e2d2761fc"
+								"url": {
+									"raw": "http://localhost:8101/database/advertisement/find/73624a82-5a15-42e5-b7bb-f84e2d2761fc",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"advertisement",
+										"find",
+										"73624a82-5a15-42e5-b7bb-f84e2d2761fc"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Find Adverts By Car Brand",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8101/database/advertisement/find/by_car/by_brand/Volkswagen",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"advertisement",
+										"find",
+										"by_car",
+										"by_brand",
+										"Volkswagen"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Find Adverts By Car Model",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8101/database/advertisement/find/by_car/by_model/Passat",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"advertisement",
+										"find",
+										"by_car",
+										"by_model",
+										"Passat"
+									],
+									"query": [
+										{
+											"key": "carModel",
+											"value": "Passat",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Find Adverts By Car Between Years",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8101/database/advertisement/find/by_car/by_year/between?minCarYear=2020&maxCarYear=2023",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"advertisement",
+										"find",
+										"by_car",
+										"by_year",
+										"between"
+									],
+									"query": [
+										{
+											"key": "minCarYear",
+											"value": "2020"
+										},
+										{
+											"key": "maxCarYear",
+											"value": "2023"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Find Adverts By Car Mileage Less Than",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8101/database/advertisement/find/by_car/by_mileage/less_than/30000",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"advertisement",
+										"find",
+										"by_car",
+										"by_mileage",
+										"less_than",
+										"30000"
+									],
+									"query": [
+										{
+											"key": "carModel",
+											"value": "Passat",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Find Adverts By Car Engine Between Engine Capacity",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8101/database/advertisement/find/by_car/by_engine/by_capacity/between?engineType=DIESEL&minCapacity=1800&maxCapacity=1900",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"advertisement",
+										"find",
+										"by_car",
+										"by_engine",
+										"by_capacity",
+										"between"
+									],
+									"query": [
+										{
+											"key": "engineType",
+											"value": "DIESEL"
+										},
+										{
+											"key": "minCapacity",
+											"value": "1800"
+										},
+										{
+											"key": "maxCapacity",
+											"value": "1900"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Find Adverts By Price Between",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8101/database/advertisement/find/by_price/between?minPrice=25000&maxPrice=28000",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"advertisement",
+										"find",
+										"by_price",
+										"between"
+									],
+									"query": [
+										{
+											"key": "minPrice",
+											"value": "25000"
+										},
+										{
+											"key": "maxPrice",
+											"value": "28000"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Find Adverts By Car Model Transmission Type",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8101/database/advertisement/find/by_car/by_transmission?transmissionType=manual",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"advertisement",
+										"find",
+										"by_car",
+										"by_transmission"
+									],
+									"query": [
+										{
+											"key": "transmissionType",
+											"value": "manual"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Find Adverts By Region",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8101/database/advertisement/find/by_region?regionType=BREST_REGION",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"advertisement",
+										"find",
+										"by_region"
+									],
+									"query": [
+										{
+											"key": "regionType",
+											"value": "BREST_REGION"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Find Adverts By Car Custom Status",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8101/database/advertisement/find/by_car/by_custom_status?customStatus=CLEARED",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"advertisement",
+										"find",
+										"by_car",
+										"by_custom_status"
+									],
+									"query": [
+										{
+											"key": "customStatus",
+											"value": "CLEARED"
+										}
+									]
+								}
 							},
 							"response": []
 						},
@@ -180,7 +610,20 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "http://localhost:8101/database/advertisement/find/all"
+								"url": {
+									"raw": "http://localhost:8101/database/advertisement/find/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"advertisement",
+										"find",
+										"all"
+									]
+								}
 							},
 							"response": []
 						},
@@ -198,7 +641,19 @@
 										}
 									}
 								},
-								"url": "http://localhost:8101/database/advertisement/update"
+								"url": {
+									"raw": "http://localhost:8101/database/advertisement/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"advertisement",
+										"update"
+									]
+								}
 							},
 							"response": []
 						},
@@ -207,7 +662,20 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "http://localhost:8101/database/advertisement/delete/e31f3031-5562-4027-bd9b-a65edb088e16"
+								"url": {
+									"raw": "http://localhost:8101/database/advertisement/delete/e31f3031-5562-4027-bd9b-a65edb088e16",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"advertisement",
+										"delete",
+										"e31f3031-5562-4027-bd9b-a65edb088e16"
+									]
+								}
 							},
 							"response": []
 						}
@@ -230,7 +698,19 @@
 										}
 									}
 								},
-								"url": "http://localhost:8101/database/comment/create"
+								"url": {
+									"raw": "http://localhost:8101/database/comment/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"comment",
+										"create"
+									]
+								}
 							},
 							"response": []
 						},
@@ -239,7 +719,20 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "http://localhost:8101/database/comment/find/72fb88e2-490d-4bdb-9836-c9975f687cc0"
+								"url": {
+									"raw": "http://localhost:8101/database/comment/find/72fb88e2-490d-4bdb-9836-c9975f687cc0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"comment",
+										"find",
+										"72fb88e2-490d-4bdb-9836-c9975f687cc0"
+									]
+								}
 							},
 							"response": []
 						},
@@ -248,7 +741,20 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "http://localhost:8101/database/comment/find/all"
+								"url": {
+									"raw": "http://localhost:8101/database/comment/find/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"comment",
+										"find",
+										"all"
+									]
+								}
 							},
 							"response": []
 						},
@@ -266,7 +772,19 @@
 										}
 									}
 								},
-								"url": "http://localhost:8101/database/comment/update"
+								"url": {
+									"raw": "http://localhost:8101/database/comment/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8101",
+									"path": [
+										"database",
+										"comment",
+										"update"
+									]
+								}
 							},
 							"response": []
 						},
@@ -275,7 +793,9 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": ""
+								"url": {
+									"raw": ""
+								}
 							},
 							"response": []
 						}
@@ -303,7 +823,19 @@
 										}
 									}
 								},
-								"url": "http://localhost:8111/business/advertisement/create"
+								"url": {
+									"raw": "http://localhost:8111/business/advertisement/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8111",
+									"path": [
+										"business",
+										"advertisement",
+										"create"
+									]
+								}
 							},
 							"response": []
 						},
@@ -312,7 +844,20 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "http://localhost:8111/business/advertisement/find/e4ee18c8-e407-418a-9bda-f90e5f396108"
+								"url": {
+									"raw": "http://localhost:8111/business/advertisement/find/e4ee18c8-e407-418a-9bda-f90e5f396108",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8111",
+									"path": [
+										"business",
+										"advertisement",
+										"find",
+										"e4ee18c8-e407-418a-9bda-f90e5f396108"
+									]
+								}
 							},
 							"response": []
 						},
@@ -321,7 +866,20 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "http://localhost:8111/business/advertisement/find/all"
+								"url": {
+									"raw": "http://localhost:8111/business/advertisement/find/all",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8111",
+									"path": [
+										"business",
+										"advertisement",
+										"find",
+										"all"
+									]
+								}
 							},
 							"response": []
 						},
@@ -339,7 +897,19 @@
 										}
 									}
 								},
-								"url": "http://localhost:8111/business/advertisement/update"
+								"url": {
+									"raw": "http://localhost:8111/business/advertisement/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8111",
+									"path": [
+										"business",
+										"advertisement",
+										"update"
+									]
+								}
 							},
 							"response": []
 						},
@@ -348,7 +918,20 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "http://localhost:8111/business/advertisement/delete/364fa6da-8f6b-4052-8411-6b7f2e21bab3"
+								"url": {
+									"raw": "http://localhost:8111/business/advertisement/delete/364fa6da-8f6b-4052-8411-6b7f2e21bab3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8111",
+									"path": [
+										"business",
+										"advertisement",
+										"delete",
+										"364fa6da-8f6b-4052-8411-6b7f2e21bab3"
+									]
+								}
 							},
 							"response": []
 						}
@@ -371,7 +954,19 @@
 										}
 									}
 								},
-								"url": "http://localhost:8111/business/car/create"
+								"url": {
+									"raw": "http://localhost:8111/business/car/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8111",
+									"path": [
+										"business",
+										"car",
+										"create"
+									]
+								}
 							},
 							"response": []
 						},
@@ -380,7 +975,20 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "http://localhost:8111/business/car/find/62298098-dc52-4de0-b33c-8a139985aac0"
+								"url": {
+									"raw": "http://localhost:8111/business/car/find/62298098-dc52-4de0-b33c-8a139985aac0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8111",
+									"path": [
+										"business",
+										"car",
+										"find",
+										"62298098-dc52-4de0-b33c-8a139985aac0"
+									]
+								}
 							},
 							"response": []
 						},
@@ -398,7 +1006,19 @@
 										}
 									}
 								},
-								"url": "http://localhost:8111/business/car/update"
+								"url": {
+									"raw": "http://localhost:8111/business/car/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8111",
+									"path": [
+										"business",
+										"car",
+										"update"
+									]
+								}
 							},
 							"response": []
 						},
@@ -407,7 +1027,20 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "http://localhost:8111/business/car/delete/62298098-dc52-4de0-b33c-8a139985aac0"
+								"url": {
+									"raw": "http://localhost:8111/business/car/delete/62298098-dc52-4de0-b33c-8a139985aac0",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8111",
+									"path": [
+										"business",
+										"car",
+										"delete",
+										"62298098-dc52-4de0-b33c-8a139985aac0"
+									]
+								}
 							},
 							"response": []
 						}
@@ -430,7 +1063,19 @@
 										}
 									}
 								},
-								"url": "http://localhost:8111/business/user/create"
+								"url": {
+									"raw": "http://localhost:8111/business/user/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8111",
+									"path": [
+										"business",
+										"user",
+										"create"
+									]
+								}
 							},
 							"response": []
 						},
@@ -439,7 +1084,20 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "http://localhost:8111/business/user/find/e6a72750-b3b5-41ac-9c3f-2bd753419bba"
+								"url": {
+									"raw": "http://localhost:8111/business/user/find/e6a72750-b3b5-41ac-9c3f-2bd753419bba",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8111",
+									"path": [
+										"business",
+										"user",
+										"find",
+										"e6a72750-b3b5-41ac-9c3f-2bd753419bba"
+									]
+								}
 							},
 							"response": []
 						},
@@ -457,7 +1115,19 @@
 										}
 									}
 								},
-								"url": "http://localhost:8111/business/user/update"
+								"url": {
+									"raw": "http://localhost:8111/business/user/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8111",
+									"path": [
+										"business",
+										"user",
+										"update"
+									]
+								}
 							},
 							"response": []
 						},
@@ -466,7 +1136,20 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "http://localhost:8111/business/user/delete/76d75130-a159-4020-89f2-143c5aea0266"
+								"url": {
+									"raw": "http://localhost:8111/business/user/delete/76d75130-a159-4020-89f2-143c5aea0266",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8111",
+									"path": [
+										"business",
+										"user",
+										"delete",
+										"76d75130-a159-4020-89f2-143c5aea0266"
+									]
+								}
 							},
 							"response": []
 						}
@@ -489,7 +1172,19 @@
 										}
 									}
 								},
-								"url": "http://localhost:8111/business/comment/create"
+								"url": {
+									"raw": "http://localhost:8111/business/comment/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8111",
+									"path": [
+										"business",
+										"comment",
+										"create"
+									]
+								}
 							},
 							"response": []
 						},
@@ -498,7 +1193,20 @@
 							"request": {
 								"method": "GET",
 								"header": [],
-								"url": "http://localhost:8111/business/comment/find/508c00b4-6e7f-4008-9c09-7da3a8428f69"
+								"url": {
+									"raw": "http://localhost:8111/business/comment/find/508c00b4-6e7f-4008-9c09-7da3a8428f69",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8111",
+									"path": [
+										"business",
+										"comment",
+										"find",
+										"508c00b4-6e7f-4008-9c09-7da3a8428f69"
+									]
+								}
 							},
 							"response": []
 						},
@@ -516,7 +1224,19 @@
 										}
 									}
 								},
-								"url": "http://localhost:8111/business/comment/update"
+								"url": {
+									"raw": "http://localhost:8111/business/comment/update",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8111",
+									"path": [
+										"business",
+										"comment",
+										"update"
+									]
+								}
 							},
 							"response": []
 						},
@@ -525,7 +1245,20 @@
 							"request": {
 								"method": "DELETE",
 								"header": [],
-								"url": "http://localhost:8111/business/comment/delete/508c00b4-6e7f-4008-9c09-7da3a8428f69"
+								"url": {
+									"raw": "http://localhost:8111/business/comment/delete/508c00b4-6e7f-4008-9c09-7da3a8428f69",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8111",
+									"path": [
+										"business",
+										"comment",
+										"delete",
+										"508c00b4-6e7f-4008-9c09-7da3a8428f69"
+									]
+								}
 							},
 							"response": []
 						}
