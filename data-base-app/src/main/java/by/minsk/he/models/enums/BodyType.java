@@ -8,5 +8,19 @@ public enum BodyType {
     SEDAN,
     SUV,
     UNIVERSAL,
-    VAGON
+    VAGON;
+
+    public static BodyType fromString(String bodyTypeString) {
+        if (bodyTypeString == null || bodyTypeString.isEmpty()) {
+            throw new IllegalArgumentException("Body type string cannot be null or empty");
+        }
+
+        for (BodyType bodyType : BodyType.values()) {
+            if (bodyType.name().equalsIgnoreCase(bodyTypeString)) {
+                return bodyType;
+            }
+        }
+
+        throw new IllegalArgumentException("Unknown body type: " + bodyTypeString);
+    }
 }
