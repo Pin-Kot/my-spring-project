@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User personal page</title>
+</head>
+<body>
+<h1>Welcome, User!</h1>
+<p>This page is only available to users with the USER role.</p>
+<a th:href="@{/web/home}" id="home">main page</a>
+<a href="/logout">Logout</a>
+</body>
+</html>

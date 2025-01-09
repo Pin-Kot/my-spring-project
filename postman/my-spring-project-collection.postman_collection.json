@@ -150,7 +150,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"userId\": \"123e4567-e89b-12d3-a456-426614174000\",\r\n    \"login\": \"exampleUser\",\r\n    \"password\": \"newStrongPassword123\",\r\n    \"nickname\": \"exampleNick\",\r\n    \"mobilePhone\": \"+1234567890\",\r\n    \"balance\": 100.50,\r\n    \"favorites\": []\r\n}",
+									"raw": "{    \r\n    \"login\": \"Alice\",\r\n    \"password\": \"Cooper\",\r\n    \"nickname\": \"WounderAlice\",\r\n    \"mobilePhone\": \"+7234567890\",\r\n    \"email\": \"alice@gmail.com\",\r\n    \"balance\": 99.99,\r\n    \"favorites\": []\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -281,7 +281,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{    \r\n    \"startDate\": \"2023-10-01\",\r\n    \"contactPhone\": \"+1234567890\",\r\n    \"price\": 1500.75,\r\n    \"rank\": 5,\r\n    \"regionType\": \"MINSK_REGION\",\r\n    \"advertStatus\": \"PREMIUM\",\r\n    \"carDto\": {\r\n        \"carId\": \"e9df9427-bf5b-4374-bca6-b253f28a36f5\",\r\n        \"brand\": \"Toyota\",\r\n        \"model\": \"Camry\",\r\n        \"year\": 2021,\r\n        \"mileage\": 15000,\r\n        \"engineType\": \"GASOLINE\",\r\n        \"engineCapacity\": 2500,\r\n        \"transmissionType\": \"AUTO\",\r\n        \"bodyType\": \"SEDAN\",\r\n        \"customStatus\": \"CLEARED\"\r\n    },\r\n    \"userDto\": {\r\n        \"userId\": \"0bb65292-b927-4563-8ae7-886c8646e792\",\r\n        \"login\": \"Alice\",\r\n        \"password\": \"Cooper\",\r\n        \"nickname\": \"WounderAlice\",\r\n        \"mobilePhone\": \"+7234567890\",\r\n        \"balance\": 99.99,\r\n        \"favorites\": []\r\n    }\r\n}",
+									"raw": "{    \r\n    \"startDate\": \"2023-10-01\",\r\n    \"contactPhone\": \"+1234567890\",\r\n    \"price\": 17000.00,\r\n    \"rank\": 5,\r\n    \"regionType\": \"MINSK_REGION\",\r\n    \"advertStatus\": \"PREMIUM\",\r\n    \"carDto\": {\r\n        \"carId\": \"673cbf6b-6ee4-4731-a96a-a2d372e8be96\",\r\n        \"brand\": \"Mercedes-Benz\",\r\n        \"model\": \"E220\",\r\n        \"year\": 2015,\r\n        \"mileage\": 15000,\r\n        \"engineType\": \"DIESEL\",\r\n        \"engineCapacity\": 2100,\r\n        \"transmissionType\": \"AUTO\",\r\n        \"bodyType\": \"SEDAN\",\r\n        \"customStatus\": \"CLEARED\"\r\n    },\r\n    \"userDto\": {\r\n        \"userId\": \"60e792d0-f717-45dd-bbad-0d4d601c52b3\",\r\n        \"login\": \"Alice\",\r\n        \"password\": \"Cooper\",\r\n        \"nickname\": \"WounderAlice\",\r\n        \"mobilePhone\": \"+7234567890\",\r\n        \"email\": \"alice@gmail.com\",\r\n        \"balance\": 99.99,\r\n        \"favorites\": []\r\n    }\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1263,6 +1263,104 @@
 							"response": []
 						}
 					]
+				}
+			]
+		},
+		{
+			"name": "KeyCloak",
+			"item": [
+				{
+					"name": "realm",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "client_id",
+									"value": "sprsecurity",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "y4Bkh5fUpkpNrOeManQmB9pQ4GOPTYIn",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "corwin",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/realms/myrealm/protocol/openid-connect/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"realms",
+								"myrealm",
+								"protocol",
+								"openid-connect",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "main page",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "personal page",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJHVXl3SEo5SDRFSDVNRGNnQ291TE9Oa2lFSTdrbFdOMUsxLUZlOEoxbkNjIn0.eyJleHAiOjE3MzQ5ODI3NjMsImlhdCI6MTczNDk4MjQ2MywianRpIjoiYzk0Y2JlM2EtYzNjYS00MWY0LWI0ZjctMDAwNzFhNDBiYzhiIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3JlYWxtcy9teXJlYWxtIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6ImIxYTAyNTg2LWQzY2EtNDZmNi1iYjNjLTJmNDdlMDNjYjJkMiIsInR5cCI6IkJlYXJlciIsImF6cCI6InNwcnNlY3VyaXR5Iiwic2lkIjoiNzk4MmQxOTUtNDBkOS00OTEyLWJlMTctZTgyM2U3NDQ4YTBkIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vbG9jYWxob3N0OjgwOTEvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1teXJlYWxtIiwiUk9MRV9VU0VSIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJzcHJfc2VjX3JvbGVzIjpbImRlZmF1bHQtcm9sZXMtbXlyZWFsbSIsIlJPTEVfVVNFUiIsIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iXSwibmFtZSI6IkpvaG4gQmFrZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJjb3J3aW4iLCJnaXZlbl9uYW1lIjoiSm9obiIsImZhbWlseV9uYW1lIjoiQmFrZXIiLCJlbWFpbCI6InBlcnNvbkBnbWFpbC5jb20ifQ.hqBjbAekgDCWfITBgiGgSmzACIVdY-w7EkSVEKMbWHgrlR2jizhna1Wcn_xNCHACS8xRsCyu-f7TxDhdzKIbnIV62Uciu2dgBZvI2WKNRm6XtRkddaAn3FoW1V3iahqR6gwVwnEQtvskg9QopEjxoYz4JrKAFhQ3CPQX-oK1Kmy_kD3exKZNxivffKXqIUH2rCbyREW5-FoJIYcoXOmf39RguOzD13WBCkIJ9V19TfcgKOZv3ZYS5H0O8B3nzqY4T3e46ZFILJjDLA5zgWqwBxdCD3yJyMtjRlSIseyAyZmm2559Uboj6qiCIlHfjPaStIkdpUM1Egq5-FjB2UatDw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8091/web/personal",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"web",
+								"personal"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
