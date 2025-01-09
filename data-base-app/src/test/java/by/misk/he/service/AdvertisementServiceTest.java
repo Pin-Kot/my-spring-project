@@ -101,13 +101,13 @@ public class AdvertisementServiceTest {
         AdvertisementModel testAdvertisement2 = advertisementStubsTest.createAdvertisementStubs();
         List<AdvertisementModel> testList = new ArrayList<>(Arrays.asList(testAdvertisement1, testAdvertisement2));
 
-        when(advertisementRepository.findAll()
+        when(advertisementRepository.findAllByOrderByAdvertStatusAscRankDesc()
         ).thenReturn(
                 testList
         );
-        List<AdvertisementModel> actualList = advertisementService.findAll();
+        List<AdvertisementModel> actualList = advertisementService.findAllByOrder();
         Assertions.assertIterableEquals(actualList, testList);
-        verify(advertisementRepository, new Times(1)).findAll();
+        verify(advertisementRepository, new Times(1)).findAllByOrderByAdvertStatusAscRankDesc();
     }
 
     @Test

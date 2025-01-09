@@ -3,7 +3,7 @@ CREATE TABLE car (
     car_id UUID PRIMARY KEY,
     brand VARCHAR(255),
     model VARCHAR(255),
-    year INT,
+    "year" INT,
     mileage INT,
     engine_type VARCHAR(255),
     engine_capacity INT,
@@ -19,6 +19,7 @@ CREATE TABLE users (
     password VARCHAR(255) NOT NULL,
     nickname VARCHAR(255),
     mobile_phone VARCHAR(13),
+    email VARCHAR(255),
     balance DECIMAL(10, 2)
 );
 

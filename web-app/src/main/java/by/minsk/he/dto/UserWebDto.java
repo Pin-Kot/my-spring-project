@@ -1,17 +1,10 @@
-package by.minsk.he.models;
+package by.minsk.he.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
-
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -19,8 +12,7 @@ import java.util.UUID;
 @Setter
 @ToString
 @Builder
-public class UserModel {
-
+public class UserWebDto {
     private UUID userId;
     private String login;
     private String password;
@@ -28,5 +20,5 @@ public class UserModel {
     private String mobilePhone;
     private String email;
     private BigDecimal balance;
-    private List<UUID> favoritesAdvertisementId = new ArrayList<>();
+    private List<UUID> favoritesAdvertisementId;
 }

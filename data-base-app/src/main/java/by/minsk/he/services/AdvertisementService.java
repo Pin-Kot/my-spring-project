@@ -106,7 +106,7 @@ public class AdvertisementService {
                 .orElseThrow(NoSuchElementException::new);
     }
 
-    public List<AdvertisementModel> findAll() {
+    public List<AdvertisementModel> findAllByOrder() {
         return advertisementRepository.findAllByOrderByAdvertStatusAscRankDesc();
     }
 

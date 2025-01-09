@@ -23,6 +23,7 @@ public class UserWebDto {
     private String password;
     private String nickname;
     private String mobilePhone;
+    private String email;
     private BigDecimal balance;
     private List<UUID> favoritesAdvertisementId;
 }

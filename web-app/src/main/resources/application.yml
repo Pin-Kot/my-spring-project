@@ -1,2 +1,19 @@
 server:
   port: 8091
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8090/realms/myrealm
+      client:
+        provider:
+          keycloak:
+            issuer-uri: http://localhost:8090/realms/myrealm
+            userNameAttribute: preferred_username
+        registration:
+          keycloak:
+            clientId: myclient
+            clientSecret: mYEBvjxBFKc61gCnf8FfiXIL5EBGWIqA
+            scope: openid

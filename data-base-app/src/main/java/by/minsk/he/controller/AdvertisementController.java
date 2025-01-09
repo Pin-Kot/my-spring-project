@@ -142,7 +142,7 @@ public class AdvertisementController {
 
     @GetMapping("/find/all")
     public List<AdvertisementDto> readAll() {
-        return advertisementService.findAll()
+        return advertisementService.findAllByOrder()
                 .stream()
                 .map(advertisementMapper::toAdvertisementDto)
                 .collect(Collectors.toList());
